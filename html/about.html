@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>About Page</title>
+     <link rel="stylesheet" href="../css/aboutStyles.css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+     <nav class="navbar">
+          <ul>
+               <li class="homePage"><a href="../html/index.html">Home</a></li>
+               <li class="about"><a href="./about.html"onclick="navigateBack()">About</a></li>
+               <li class="contactUs"><a target="_blank" href="../html/contact.html"onclick="navigateBack()">Contact Us</a></li>
+          </ul>
+     </nav>
+     <div class="spacer"></div>
+     <section>
+          <div id="map">
+          <iframe 
+               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9210.089612330354!2d31.3222429223943!3d30.09461866755161!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14583f99638adb51%3A0x15ae438699460cc2!2sEl%20Korba%20Square!5e0!3m2!1sen!2seg!4v1702034699959!5m2!1sen!2seg"
+               width="400" height="400" style="border:0;" allowfullscreen="" loading="lazy"
+               referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+          </div>
+          <div id="info">
+               <h2>Our Location</h2>
+               <p>We are located at El Korba. Visit us!</p>
+     
+               <h2>Our Products</h2>
+               <p>Your one-stop destination for a unique shopping experience! Dive into captivating
+               worlds with our extensive collection of manga books, offering adventure, fantasy, and more. Elevate your tech game with
+               our cutting-edge laptops and smartphones, ensuring you stay connected and productive. Express your style with our
+               curated clothing line, blending comfort and fashion effortlessly. At [Company Name], we prioritize quality and
+               variety, catering to diverse tastes.</p>
+     
+               <h2>Company Information</h2>
+               <p>Explore, shop, and redefine your lifestyle with us. Join our community of satisfied
+               customers as we bring the best in manga, technology, and fashion right to your fingertips. Your journey begins here at
+               [Company Name]</p>
+          </div>
+     </section>
+          <div class="spacer"></div>
+
+               <div class="product-container">
+                    <img class="product-image"
+                         src="../images/buynowVAGABOND.png" alt="Product Image">
+               
+                    <div class="product-info">
+                         <h2>VAGABOND. is Here! </h2>
+                         <p>Vagabond is a Japanese epic martial arts manga series written and illustrated by Takehiko Inoue.</p>
+                    </div>
+                    <button class="buy-now" onclick="redirectToShoppingPage()">Buy Now</button>
+               </div>
+               
+               <a href="#" id="backToTopBtn">Back to Top ↑</a>   
+
+
+     <footer>
+          <div class="contact-info">
+               <p>Company Name</p>
+               <p>122 Heliopolis, Cairo</p>
+               <p>Email: info@company.com</p>
+               <p>Phone: +2 (122) 257-2002</p>
+          </div>
+          <div class="social-icons">
+               <a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a>
+               <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+               <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+          </div>
+     </footer>
+     <script src="../javascript/about.js"></script>
+</body>
+</html>

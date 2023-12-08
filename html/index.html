@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>The E-commerce Site</title>
+     <link rel="stylesheet" href="../css/main.css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+</head>
+
+<body>
+
+     <body>
+
+          <!-- The Home Navbar -->
+          <nav id="homeNav" class="navbar">
+               <ul>
+                    <li class="homePage"><a href="#Home">Home</a></li>
+                    <li class="about"><a target="_blank" href="../html/about.html" onclick="navigateBack()">About</a>
+                    </li>
+                    <li class="contactUs"><a target="_blank" href="../html/contact.html"
+                              onclick="navigateBack()">Contact Us</a></li>
+               </ul>
+          </nav>
+
+          <div class="spacer"></div>
+
+          <!-- The Slider -->
+          <div class="theSliderContainer">
+               <div class="mySlides fade">
+                    <img src="../images/imgOneVagabond.jpg">
+               </div>
+
+               <div class="mySlides fade">
+                    <img
+                         src="https://www.apple.com/newsroom/images/product/mac/standard/Apple_next-generation-mac-macbookair-macbookpro-mac-mini_11102020_Full-Bleed-Image.jpg.large.jpg">
+               </div>
+               <div class="mySlides fade">
+                    <img
+                         src="https://www.theadairgroup.com/blog/wp-content/uploads/2021/11/colorful-different-hoodie.jpg">
+               </div>
+               <a class="prev" onclick="plusSlides(-1)">❮</a>
+               <a class="next" onclick="plusSlides(1)">❯</a>
+
+          </div>
+          <br>
+          <div style="text-align:center">
+               <span class="dot" onclick="currentSlide(1)"></span>
+               <span class="dot" onclick="currentSlide(2)"></span>
+               <span class="dot" onclick="currentSlide(3)"></span>
+          </div>
+          <br><br>
+
+
+          <!-- categories -->
+          <div id="lastDiv">
+               <p>Hundreds of New Arrivals are here!</p>
+          </div>
+          <br><br>
+
+          <div id="categories">
+               <button class="category-btn" onclick="filterCategory('All')">All</button>
+               <button class="category-btn" onclick="filterCategory('Manga')">Manga</button>
+               <button class="category-btn" onclick="filterCategory('LaptopsandPhones')">Laptops | Phones</button>
+               <button class="category-btn" onclick="filterCategory('Clothes')">Clothes</button>
+          </div>
+          <!-- products -->
+          <section id="productSection"></section>
+
+
+          <div id="cartContainer"></div>
+          <a href="#" id="backToTopBtn">Back to Top ↑</a>
+          <footer>
+               <div class="contact-info">
+                    <p>Company Name</p>
+                    <p>122 Heliopolis, Cairo</p>
+                    <p>Email: info@company.com</p>
+                    <p>Phone: +2 (122) 257-2002</p>
+               </div>
+               <div class="social-icons">
+                    <a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+                    <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+               </div>
+          </footer>
+
+
+
+
+          <script src="../javascript/script.js"></script>
+     </body>
+
+</body>
+
+</html>
